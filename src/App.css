@@ -1,0 +1,20 @@
+body {
+    background: #e5e5e5 url('./assets/noise.png');
+}
+
+/* Remove as bordas laterais/superior e adiciona apenas a inferior */
+.input-borda-inferior {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 2px solid #ccc !important;
+  border-radius: 0 !important; /* Remove os cantos arredondados */
+  background-color: transparent !important; /* Garante que fique sem fundo branco */
+}
+
+/* Efeito bonito quando o usuário clica para digitar */
+.input-borda-inferior:focus {
+  outline: none !important;
+  box-shadow: none !important; /* Remove a sombra azul padrão do Bootstrap */
+  border-bottom-color: #0d6efd !important; /* Muda a cor da linha de baixo para o azul do Bootstrap */
+}
